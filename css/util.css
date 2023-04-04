@@ -3035,7 +3035,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .tit9 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 30px;
 	line-height: 1.2;
 	color: #222222;
@@ -3075,7 +3075,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .txt3 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 12px;
 	line-height: 1.1;
 	color: #ec1d25;
@@ -3084,8 +3084,8 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .txt4 {
 	font-family: Montserrat;
-	font-weight: 400;
-	font-size: 12px;
+	font-weight: 600;
+	font-size: 16px;
 	color: #222222;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -3093,7 +3093,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .txt5 {
 	font-family: Montserrat;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 22px;
 	color: #333333;
 	text-transform: uppercase;
@@ -3102,7 +3102,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .txt6 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 12px;
 	color: white;
 	text-transform: uppercase;
@@ -3130,21 +3130,21 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .txt9 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 15px;
 	color: #555555;
 }
 
 .txt10 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 14px;
-	color: #666666;
+	color: #000000;
 }
 
 .txt11 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 12px;
 	line-height: 1.1;
 	color: white;
@@ -3154,9 +3154,9 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .txt12 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 18px;
-	color: #666666;
+	color: #000000;
 	line-height: 1.7;
 }
 
@@ -3171,15 +3171,15 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .txt14 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 13px;
-	color: #999999;
+	color: #ffffff;
 	line-height: 1.7;
 }
 
 .txt15 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 13px;
 	color: #ec1d25;
 	line-height: 1.7;
@@ -3187,7 +3187,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .txt16 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 12px;
 	color: #555555;
 }
@@ -3208,7 +3208,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .txt19 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 14px;
 	color: #222222;
 	line-height: 1.2;
@@ -3226,8 +3226,8 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .txt21 {
 	font-family: Montserrat;
-	font-weight: 300;
-	font-size: 18px;
+	font-weight: 500;
+	font-size: 16px;
 	color: #333333;
 	line-height: 1.4;
 	text-transform: uppercase;
@@ -3236,7 +3236,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .txt22 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 22px;
 	color: #333333;
 	line-height: 1.2;
@@ -3245,15 +3245,15 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .txt23 {
 	font-family: Montserrat;
-	font-weight: 400;
-	font-size: 13px;
-	color: #666666;
+	font-weight: 500;
+	font-size: 16px;
+	color: #000000;
 	line-height: 1.7;
 }
 
 .txt24 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 15px;
 	line-height: 1.7;
 	color: #ec1d25;
@@ -3261,7 +3261,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .txt25 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 15px;
 	line-height: 1.7;
 	color: #222222;
@@ -3278,7 +3278,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .txt27 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 12px;
 	color: #222222;
 	line-height: 1.5;
@@ -3299,7 +3299,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .txt29 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 12px;
 	color: #999999;
 	line-height: 1.5;
@@ -3319,14 +3319,14 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .txt31 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 12px;
 	color: white;
 }
 
 .txt32 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 12px;
 	color: #808080;
 	line-height: 1.5;
@@ -3352,9 +3352,9 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .txt35 {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 12px;
-	color: #666666;
+	color: #000000;
 	text-transform: uppercase;
 	line-height: 1.8;
 }
@@ -3684,10 +3684,10 @@ EFFECT   EFFECT   EFFECT   EFFECT   EFFECT   EFFECT  EFFECT
 -----------------------------------------------------------
 */
 .gradient1 {
-  background: -webkit-linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0));
-  background: -o-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0)); 
-  background: -moz-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
-  background: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0));
+  background: -webkit-linear-gradient(rgba(0,0,0,1) , rgba(0,0,0,0.5));
+  background: -o-linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.5)); 
+  background: -moz-linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.5));
+  background: linear-gradient(rgba(0,0,0,1) , rgba(0,0,0,0.5));
 }
 
 
@@ -3695,8 +3695,7 @@ EFFECT   EFFECT   EFFECT   EFFECT   EFFECT   EFFECT  EFFECT
 -----------------------------------------------------------
 */
 .bg1-pattern {
-	background-image: url(../images/icons/pattern1.png);
-  	background-repeat: repeat;
+
 }
 
 .bg2-pattern {

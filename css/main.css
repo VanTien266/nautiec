@@ -101,16 +101,16 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 body, html {
 	height: 100%;
 	font-family: Montserrat, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /* ------------------------------------ */
 a {
 	font-family: Montserrat;
-  font-weight: 400;
+  font-weight: 500;
 	font-size: 15px;
 	line-height: 1.7;
-	color: #666666;
+	color: #000000;
 	margin: 0px;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
@@ -134,10 +134,10 @@ h1,h2,h3,h4,h5,h6 {
 
 p {
 	font-family: Montserrat;
-  font-weight: 400;
-	font-size: 15px;
+  font-weight: 500;
+	font-size: 18px;
 	line-height: 1.7;
-	color: #666666;
+	color: #000000;
 	margin: 0px;
 }
 
@@ -326,7 +326,7 @@ input[type="date" i] {
 .table-condensed td, .table-condensed th {
   font-size: 14px;
   font-family: Montserrat;
-  font-weight: 400;
+  font-weight: 500;
 }
 .daterangepicker {
     width: 339px;
@@ -421,8 +421,8 @@ input[type="date" i] {
 .select2-selection__rendered {
   font-size: 14px;
   font-family: Montserrat;
-  font-weight: 400;
-  color: #666666 !important;
+  font-weight: 500;
+  color: #000000 !important;
   padding-left: 20px !important;
 } 
 
@@ -454,8 +454,8 @@ input[type="date" i] {
 .select2-results__options{
   font-size: 14px;
   font-family: Montserrat;
-  font-weight: 400;
-  color: #666666 !important;
+  font-weight: 500;
+  color: #000000 !important;
 }
 
 
@@ -463,9 +463,9 @@ input[type="date" i] {
   border: 1px solid #aaa !important;
   outline: none;
   font-family: Montserrat;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
-  color: #666666;
+  color: #000000;
 }
 
 .select2-search--dropdown .select2-search__field:focus {
@@ -509,7 +509,7 @@ input[type="date" i] {
 .header-fixed .wrap-menu-header {
   position: fixed;
   height: 100px;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.97);
   box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -574,7 +574,7 @@ input[type="date" i] {
 
 .main_menu > li > a {
   font-family: Montserrat;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
   color: white;
@@ -643,7 +643,7 @@ input[type="date" i] {
 .sub_menu li, .sub_menu a {
   padding: 10px;
   font-family: Montserrat;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   color: #808080;
 }
@@ -658,7 +658,7 @@ input[type="date" i] {
 -----------------------------------------------------------
 */
 .social a {
-  font-size: 15px;
+  font-size: 20px;
   color: white;
 }
 
@@ -1377,7 +1377,7 @@ body {padding-right: 0px !important;}
   padding: 3px 15px;
 
   font-family: Montserrat;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   color: white;
   border-radius: 4px;
@@ -1550,7 +1550,7 @@ body {padding-right: 0px !important;}
 */
 .item-pagination {
   font-family: Montserrat;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 13px;
   color: #808080;
   width: 36px;
