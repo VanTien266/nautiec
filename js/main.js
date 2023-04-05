@@ -171,224 +171,211 @@
         },
       });
     });
-  });
 
-  var labelGallerys = $('.label-gallery');
+    let menuContainer = $('.menu-container');
+    const menuData = [
+      { name: 'Súp cua hạt sen', price: 200, menu: 1 },
+      { name: 'Nem nướng + chả giò + gỏi củ lai dừa', price: 450, menu: 1 },
+      { name: 'Nai né', price: 300, menu: 1 },
+      { name: 'Tai tượng chiên', price: 350, menu: 1 },
+      { name: 'Lẩu cá bớp', price: 500, menu: 1 },
+      { name: 'Rau câu', price: 80, menu: 1 },
 
-  $(labelGallerys).each(function () {
-    $(this).on('click', function () {
-      for (var i = 0; i < labelGallerys.length; i++) {
-        $(labelGallerys[i]).removeClass('is-actived');
-      }
+      { name: 'Chả giò + gỏi sen', price: 300, menu: 2 },
+      { name: 'Mực xào', price: 350, menu: 2 },
+      { name: 'Bò nấu tiêu bánh mì', price: 350, menu: 2 },
+      { name: 'Đà điểu lúc lắc', price: 350, menu: 2 },
+      { name: 'Lẩu thái hải sản', price: 400, menu: 2 },
+      { name: 'Trái cây', price: 100, menu: 2 },
 
-      $(this).addClass('is-actived');
-    });
-  });
+      { name: 'Súp măng tây', price: 200, menu: 3 },
+      { name: 'Gà hấp xôi', price: 360, menu: 3 },
+      { name: 'Tôm rang me', price: 400, menu: 3 },
+      { name: 'Nai né', price: 300, menu: 3 },
+      { name: 'Lẩu cá kèo', price: 500, menu: 3 },
+      { name: 'Trái cây', price: 100, menu: 3 },
 
-  var menuContainer = $('.menu-container');
-  const menuData = [
-    { name: 'Súp cua hạt sen', price: 200, menu: 1 },
-    { name: 'Nem nướng + chả giò + gỏi củ lai dừa', price: 450, menu: 1 },
-    { name: 'Nai né', price: 300, menu: 1 },
-    { name: 'Tai tượng chiên', price: 350, menu: 1 },
-    { name: 'Lẩu cá bớp', price: 500, menu: 1 },
-    { name: 'Rau câu', price: 80, menu: 1 },
+      { name: 'Gỏi giò bóp thâu', price: 350, menu: 4 },
+      { name: 'Ếch chiên nước mắm', price: 300, menu: 4 },
+      { name: 'Tôm hấp bia', price: 400, menu: 4 },
+      { name: 'Sườn heo nấu đậu', price: 360, menu: 4 },
+      { name: 'Lẩu hải sản', price: 400, menu: 4 },
+      { name: 'Rau câu dừa', price: 80, menu: 4 },
 
-    { name: 'Chả giò + gỏi sen', price: 300, menu: 2 },
-    { name: 'Mực xào', price: 350, menu: 2 },
-    { name: 'Bò nấu tiêu bánh mì', price: 350, menu: 2 },
-    { name: 'Đà điểu lúc lắc', price: 350, menu: 2 },
-    { name: 'Lẩu thái hải sản', price: 400, menu: 2 },
-    { name: 'Trái cây', price: 100, menu: 2 },
+      { name: 'Gỏi ngó sen + cá trứng chiên', price: 300, menu: 5 },
+      { name: 'Gà hấp đông cô + xôi', price: 400, menu: 5 },
+      { name: 'Nai né', price: 300, menu: 5 },
+      { name: 'Tai tượng chiên', price: 350, menu: 5 },
+      { name: 'Lẩu thái', price: 400, menu: 5 },
+      { name: 'Rau câu trái dừa', price: 170, menu: 5 },
 
-    { name: 'Súp măng tây', price: 200, menu: 3 },
-    { name: 'Gà hấp xôi', price: 360, menu: 3 },
-    { name: 'Tôm rang me', price: 400, menu: 3 },
-    { name: 'Nai né', price: 300, menu: 3 },
-    { name: 'Lẩu cá kèo', price: 500, menu: 3 },
-    { name: 'Trái cây', price: 100, menu: 3 },
+      { name: 'Súp tôm trứng cút', price: 200, menu: 6 },
+      { name: 'Gỏi dừa tôm thịt', price: 300, menu: 6 },
+      { name: 'Thát lát hấp nấm kim', price: 420, menu: 6 },
+      { name: 'Bò nấu tiêu + bánh mì', price: 300, menu: 6 },
+      { name: 'Lẩu gà lá giang', price: 500, menu: 6 },
+      { name: 'Chè nhãn lục', price: 200, menu: 6 },
 
-    { name: 'Gỏi giò bóp thâu', price: 350, menu: 4 },
-    { name: 'Ếch chiên nước mắm', price: 300, menu: 4 },
-    { name: 'Tôm hấp bia', price: 400, menu: 4 },
-    { name: 'Sườn heo nấu đậu', price: 360, menu: 4 },
-    { name: 'Lẩu hải sản', price: 400, menu: 4 },
-    { name: 'Rau câu dừa', price: 80, menu: 4 },
+      { name: 'Súp bắp cua hạt sen', price: 200, menu: 7 },
+      { name: 'Đà điểu né', price: 350, menu: 7 },
+      { name: 'Gà hấp + xôi', price: 360, menu: 7 },
+      { name: 'Chép giòn om dưa', price: 560, menu: 7 },
+      { name: 'Lẩu thái', price: 400, menu: 7 },
+      { name: 'Rau câu ca cao', price: 180, menu: 7 },
 
-    { name: 'Gỏi ngó sen + cá trứng chiên', price: 300, menu: 5 },
-    { name: 'Gà hấp đông cô + xôi', price: 400, menu: 5 },
-    { name: 'Nai né', price: 300, menu: 5 },
-    { name: 'Tai tượng chiên', price: 350, menu: 5 },
-    { name: 'Lẩu thái', price: 400, menu: 5 },
-    { name: 'Rau câu trái dừa', price: 170, menu: 5 },
+      { name: 'Khai vị Phúc Lộc Thọ', price: 500, menu: 8 },
+      { name: 'Gỏi gà xe phay', price: 360, menu: 8 },
+      { name: 'Mực hấp hành gừng', price: 350, menu: 8 },
+      { name: 'Cá lóc hấp bầu', price: 300, menu: 8 },
+      { name: 'Lẩu cá tầm măng chua', price: 500, menu: 8 },
+      { name: 'Bánh flan', price: 110, menu: 8 },
 
-    { name: 'Súp tôm trứng cút', price: 200, menu: 6 },
-    { name: 'Gỏi dừa tôm thịt', price: 300, menu: 6 },
-    { name: 'Thát lát hấp nấm kim', price: 420, menu: 6 },
-    { name: 'Bò nấu tiêu + bánh mì', price: 300, menu: 6 },
-    { name: 'Lẩu gà lá giang', price: 500, menu: 6 },
-    { name: 'Chè nhãn lục', price: 200, menu: 6 },
+      { name: 'Gỏi gà xe phay', price: 460, menu: 9 },
+      { name: 'Giò heo muối chiên giòn', price: 460, menu: 9 },
+      { name: 'Thát lát hấp kim châm', price: 420, menu: 9 },
+      { name: 'Bò nấu đậu + bánh mì', price: 360, menu: 9 },
+      { name: 'Lẩu thái hải sản', price: 400, menu: 9 },
+      { name: 'Rau câu thái', price: 150, menu: 9 },
 
-    { name: 'Súp bắp cua hạt sen', price: 200, menu: 7 },
-    { name: 'Đà điểu né', price: 350, menu: 7 },
-    { name: 'Gà hấp + xôi', price: 360, menu: 7 },
-    { name: 'Chép giòn om dưa', price: 560, menu: 7 },
-    { name: 'Lẩu thái', price: 400, menu: 7 },
-    { name: 'Rau câu ca cao', price: 180, menu: 7 },
+      { name: 'Gỏi nấm tuyết + chả giò', price: 350, menu: 10 },
+      { name: 'Gà hấp + xôi', price: 360, menu: 10 },
+      { name: 'Cá chẽm chưng tương', price: 360, menu: 10 },
+      { name: 'Tôm càng nướng', price: 750, menu: 10 },
+      { name: 'Lẩu ếch', price: 400, menu: 10 },
+      { name: 'Dưa lưới Nhật', price: 210, menu: 10 },
 
-    { name: 'Khai vị Phúc Lộc Thọ', price: 500, menu: 8 },
-    { name: 'Gỏi gà xe phay', price: 360, menu: 8 },
-    { name: 'Mực hấp hành gừng', price: 350, menu: 8 },
-    { name: 'Cá lóc hấp bầu', price: 300, menu: 8 },
-    { name: 'Lẩu cá tầm măng chua', price: 500, menu: 8 },
-    { name: 'Bánh flan', price: 110, menu: 8 },
+      { name: 'Gỏi bò bóp thâu', price: 350, menu: 11 },
+      { name: 'Dê hấp tía tô', price: 450, menu: 11 },
+      { name: 'Tôm nướng 20 con', price: 600, menu: 11 },
+      { name: 'Cá mú hấp', price: 680, menu: 11 },
+      { name: 'Lẩu cua đồng hải sản', price: 500, menu: 11 },
+      { name: 'Rau câu', price: 80, menu: 11 },
 
-    { name: 'Gỏi gà xe phay', price: 460, menu: 9 },
-    { name: 'Giò heo muối chiên giòn', price: 460, menu: 9 },
-    { name: 'Thát lát hấp kim châm', price: 420, menu: 9 },
-    { name: 'Bò nấu đậu + bánh mì', price: 360, menu: 9 },
-    { name: 'Lẩu thái hải sản', price: 400, menu: 9 },
-    { name: 'Rau câu thái', price: 150, menu: 9 },
+      { name: 'Súp cua tuyết nhĩ', price: 250, menu: 12 },
+      { name: 'Cua lột rang muối', price: 700, menu: 12 },
+      { name: 'Dê hấp tía tô', price: 450, menu: 12 },
+      { name: 'Tôm sú hấp 20 con', price: 600, menu: 12 },
+      { name: 'Lẩu chép giòn', price: 560, menu: 12 },
+      { name: 'Chè nhãn lục hạt sen', price: 200, menu: 12 },
 
-    { name: 'Gỏi nấm tuyết + chả giò', price: 350, menu: 10 },
-    { name: 'Gà hấp + xôi', price: 360, menu: 10 },
-    { name: 'Cá chẽm chưng tương', price: 360, menu: 10 },
-    { name: 'Tôm càng nướng', price: 750, menu: 10 },
-    { name: 'Lẩu ếch', price: 400, menu: 10 },
-    { name: 'Dưa lưới Nhật', price: 210, menu: 10 },
+      { name: 'Gỏi củ dừa + mực giòn + thát lát', price: 500, menu: 13 },
+      { name: 'Bê hấp rau rừng', price: 460, menu: 13 },
+      { name: 'Cá mú hấp Hồng Kông', price: 580, menu: 13 },
+      { name: 'Tôm sú hấp bia 20 con', price: 600, menu: 13 },
+      { name: 'Lẩu cua đồng bắp bò', price: 500, menu: 13 },
+      { name: 'Bánh flan', price: 110, menu: 13 },
 
-    { name: 'Gỏi bò bóp thâu', price: 350, menu: 11 },
-    { name: 'Dê hấp tía tô', price: 450, menu: 11 },
-    { name: 'Tôm nướng 20 con', price: 600, menu: 11 },
-    { name: 'Cá mú hấp', price: 680, menu: 11 },
-    { name: 'Lẩu cua đồng hải sản', price: 500, menu: 11 },
-    { name: 'Rau câu', price: 80, menu: 11 },
+      { name: 'Thát lát + cá trứng + nem nướng', price: 500, menu: 14 },
+      { name: 'Bắp bò hoa hấp cải chua', price: 420, menu: 14 },
+      { name: 'Tôm càng nướng', price: 750, menu: 14 },
+      { name: 'Gà bó xôi', price: 500, menu: 14 },
+      { name: 'Lẩu cá tằm', price: 560, menu: 14 },
+      { name: 'Nho Mỹ', price: 180, menu: 14 },
 
-    { name: 'Súp cua tuyết nhĩ', price: 250, menu: 12 },
-    { name: 'Cua lột rang muối', price: 700, menu: 12 },
-    { name: 'Dê hấp tía tô', price: 450, menu: 12 },
-    { name: 'Tôm sú hấp 20 con', price: 600, menu: 12 },
-    { name: 'Lẩu chép giòn', price: 560, menu: 12 },
-    { name: 'Chè nhãn lục hạt sen', price: 200, menu: 12 },
+      { name: 'Gỏi củ dừa + thát lát', price: 660, menu: 15 },
+      { name: 'Bê hấp rau rừng', price: 460, menu: 15 },
+      { name: 'Tôm càng nướng', price: 750, menu: 15 },
+      { name: 'Gà hấp lá chanh + xôi', price: 360, menu: 15 },
+      { name: 'Lẩu cá chình măng chua', price: 700, menu: 15 },
+      { name: 'Bánh flan', price: 110, menu: 15 },
 
-    { name: 'Gỏi củ dừa + mực giòn + thát lát', price: 500, menu: 13 },
-    { name: 'Bê hấp rau rừng', price: 460, menu: 13 },
-    { name: 'Cá mú hấp Hồng Kông', price: 580, menu: 13 },
-    { name: 'Tôm sú hấp bia 20 con', price: 600, menu: 13 },
-    { name: 'Lẩu cua đồng bắp bò', price: 500, menu: 13 },
-    { name: 'Bánh flan', price: 110, menu: 13 },
+      { name: 'Gỏi dê tái chanh', price: 450, menu: 16 },
+      { name: 'Bồ câu quay bánh bao', price: 600, menu: 16 },
+      { name: 'Cá chình nướng', price: 850, menu: 16 },
+      { name: 'Báp bò hầm', price: 500, menu: 16 },
+      { name: 'Lẩu cua thát lát', price: 550, menu: 16 },
+      { name: 'Nho Mỹ', price: 180, menu: 16 },
 
-    { name: 'Thát lát + cá trứng + nem nướng', price: 500, menu: 14 },
-    { name: 'Bắp bò hoa hấp cải chua', price: 420, menu: 14 },
-    { name: 'Tôm càng nướng', price: 750, menu: 14 },
-    { name: 'Gà bó xôi', price: 500, menu: 14 },
-    { name: 'Lẩu cá tằm', price: 560, menu: 14 },
-    { name: 'Nho Mỹ', price: 180, menu: 14 },
+      {
+        name: 'Gỏi sen + nem nướng + tôm chiên + mực chiên',
+        price: 600,
+        menu: 17,
+      },
+      { name: 'Tôm nướng 20 con', price: 600, menu: 17 },
+      { name: 'Heo sữa quay bánh bao', price: 950, menu: 17 },
+      { name: 'Heo rừng xào sả', price: 400, menu: 17 },
+      { name: 'Cá chình nấu chuối', price: 700, menu: 17 },
+      { name: 'Nho Mỹ', price: 180, menu: 17 },
 
-    { name: 'Gỏi củ dừa + thát lát', price: 660, menu: 15 },
-    { name: 'Bê hấp rau rừng', price: 460, menu: 15 },
-    { name: 'Tôm càng nướng', price: 750, menu: 15 },
-    { name: 'Gà hấp lá chanh + xôi', price: 360, menu: 15 },
-    { name: 'Lẩu cá chình măng chua', price: 700, menu: 15 },
-    { name: 'Bánh flan', price: 110, menu: 15 },
+      { name: 'Gỏi tiến vua', price: 300, menu: 18 },
+      { name: 'Heo sữa quay 1/2 con', price: 950, menu: 18 },
+      { name: 'Cua rang me 5 con', price: 900, menu: 18 },
+      { name: 'Cá chép giòn om dưa', price: 560, menu: 18 },
+      { name: 'Gà tiềm ớt hiểm', price: 600, menu: 18 },
+      { name: 'Chè khúc bạch', price: 200, menu: 18 },
 
-    { name: 'Gỏi dê tái chanh', price: 450, menu: 16 },
-    { name: 'Bồ câu quay bánh bao', price: 600, menu: 16 },
-    { name: 'Cá chình nướng', price: 850, menu: 16 },
-    { name: 'Báp bò hầm', price: 500, menu: 16 },
-    { name: 'Lẩu cua thát lát', price: 550, menu: 16 },
-    { name: 'Nho Mỹ', price: 180, menu: 16 },
+      {
+        name: 'Tôm + mực chiên giòn + cua lột xác muối + chả giò Mayoe',
+        price: 800,
+        menu: 19,
+      },
+      { name: 'Tôm sú hấp loại lớn', price: 600, menu: 19 },
+      { name: 'Gà hấp tỏi đen + xôi', price: 750, menu: 19 },
+      { name: 'Cá mú hấp', price: 680, menu: 19 },
+      { name: 'Bồ câu tiềm', price: 700, menu: 19 },
+      { name: 'Trái cây thập cẩm', price: 100, menu: 19 },
 
-    {
-      name: 'Gỏi sen + nem nướng + tôm chiên + mực chiên',
-      price: 600,
-      menu: 17,
-    },
-    { name: 'Tôm nướng 20 con', price: 600, menu: 17 },
-    { name: 'Heo sữa quay bánh bao', price: 950, menu: 17 },
-    { name: 'Heo rừng xào sả', price: 400, menu: 17 },
-    { name: 'Cá chình nấu chuối', price: 700, menu: 17 },
-    { name: 'Nho Mỹ', price: 180, menu: 17 },
+      { name: 'Súp bào ngư', price: 500, menu: 20 },
+      { name: 'Cá mú đủ chưng tương', price: 720, menu: 20 },
+      { name: 'Bồ câu hấp trái dừa (10 con)', price: 1200, menu: 20 },
+      { name: 'Dê ủ muối', price: 500, menu: 20 },
+      { name: 'Ba ba om chuối', price: 680, menu: 20 },
+      { name: 'Dưa lưới Nhật', price: 210, menu: 20 },
 
-    { name: 'Gỏi tiến vua', price: 300, menu: 18 },
-    { name: 'Heo sữa quay 1/2 con', price: 950, menu: 18 },
-    { name: 'Cua rang me 5 con', price: 900, menu: 18 },
-    { name: 'Cá chép giòn om dưa', price: 560, menu: 18 },
-    { name: 'Gà tiềm ớt hiểm', price: 600, menu: 18 },
-    { name: 'Chè khúc bạch', price: 200, menu: 18 },
+      { name: 'Gỏi bò ngũ sắc', price: 400, menu: 21 },
+      { name: 'Cua gạch hấp', price: 920, menu: 21 },
+      { name: 'Cá tầm nướng', price: 600, menu: 21 },
+      { name: 'Dúi hấp', price: 1800, menu: 21 },
+      { name: 'Gà nòi hầm sả', price: 600, menu: 21 },
+      { name: 'Nho Mỹ', price: 180, menu: 21 },
 
-    {
-      name: 'Tôm + mực chiên giòn + cua lột xác muối + chả giò Mayoe',
-      price: 800,
-      menu: 19,
-    },
-    { name: 'Tôm sú hấp loại lớn', price: 600, menu: 19 },
-    { name: 'Gà hấp tỏi đen + xôi', price: 750, menu: 19 },
-    { name: 'Cá mú hấp', price: 680, menu: 19 },
-    { name: 'Bồ câu tiềm', price: 700, menu: 19 },
-    { name: 'Trái cây thập cẩm', price: 100, menu: 19 },
+      { name: 'Gỏi gà nguyên con', price: 360, menu: 22 },
+      { name: 'Tôm càng hấp', price: 750, menu: 22 },
+      { name: 'Cua 2 da hấp 10 con', price: 1800, menu: 22 },
+      { name: 'Heo sữa quay bánh bao', price: 950, menu: 22 },
+      { name: 'Lẩu chép giòn nấu riêu', price: 600, menu: 22 },
+      { name: 'Rau câu trái dừa', price: 170, menu: 22 },
 
-    { name: 'Súp bào ngư', price: 500, menu: 20 },
-    { name: 'Cá mú đủ chưng tương', price: 720, menu: 20 },
-    { name: 'Bồ câu hấp trái dừa (10 con)', price: 1200, menu: 20 },
-    { name: 'Dê ủ muối', price: 500, menu: 20 },
-    { name: 'Ba ba om chuối', price: 680, menu: 20 },
-    { name: 'Dưa lưới Nhật', price: 210, menu: 20 },
+      { name: 'Súp sò điệp Nhật', price: 980, menu: 23 },
+      { name: 'Cua hấp nước dừa (10 con)', price: 1800, menu: 23 },
+      { name: 'Gà hấp tỏi đen', price: 750, menu: 23 },
+      { name: 'Cá mú hấp Hồng Kông', price: 680, menu: 23 },
+      { name: 'Lẩu kim chi bắp bò', price: 600, menu: 23 },
+      { name: 'Chè nhãn lục hạt sen', price: 200, menu: 23 },
 
-    { name: 'Gỏi bò ngũ sắc', price: 400, menu: 21 },
-    { name: 'Cua gạch hấp', price: 920, menu: 21 },
-    { name: 'Cá tầm nướng', price: 600, menu: 21 },
-    { name: 'Dúi hấp', price: 1800, menu: 21 },
-    { name: 'Gà nòi hầm sả', price: 600, menu: 21 },
-    { name: 'Nho Mỹ', price: 180, menu: 21 },
+      { name: 'Súp bào ngư hải sâm', price: 980, menu: 24 },
+      { name: 'Cá chình nướng', price: 850, menu: 24 },
+      { name: 'Tôm càng hấp', price: 750, menu: 24 },
+      { name: 'Heo sữa quay 1/2 con', price: 950, menu: 24 },
+      { name: 'Lẩu cua nấu bầu (10 con)', price: 1900, menu: 24 },
+      { name: 'Chè khúc bạch', price: 200, menu: 24 },
+    ];
 
-    { name: 'Gỏi gà nguyên con', price: 360, menu: 22 },
-    { name: 'Tôm càng hấp', price: 750, menu: 22 },
-    { name: 'Cua 2 da hấp 10 con', price: 1800, menu: 22 },
-    { name: 'Heo sữa quay bánh bao', price: 950, menu: 22 },
-    { name: 'Lẩu chép giòn nấu riêu', price: 600, menu: 22 },
-    { name: 'Rau câu trái dừa', price: 170, menu: 22 },
+    for (let i = 0; i < menuData.length; i += 12) {
+      const sumFirstMenu =
+        menuData[i].price +
+        menuData[i + 1].price +
+        menuData[i + 2].price +
+        menuData[i + 3].price +
+        menuData[i + 4].price +
+        menuData[i + 5].price;
 
-    { name: 'Súp sò điệp Nhật', price: 980, menu: 23 },
-    { name: 'Cua hấp nước dừa (10 con)', price: 1800, menu: 23 },
-    { name: 'Gà hấp tỏi đen', price: 750, menu: 23 },
-    { name: 'Cá mú hấp Hồng Kông', price: 680, menu: 23 },
-    { name: 'Lẩu kim chi bắp bò', price: 600, menu: 23 },
-    { name: 'Chè nhãn lục hạt sen', price: 200, menu: 23 },
-
-    { name: 'Súp bào ngư hải sâm', price: 980, menu: 24 },
-    { name: 'Cá chình nướng', price: 850, menu: 24 },
-    { name: 'Tôm càng hấp', price: 750, menu: 24 },
-    { name: 'Heo sữa quay 1/2 con', price: 950, menu: 24 },
-    { name: 'Lẩu cua nấu bầu (10 con)', price: 1900, menu: 24 },
-    { name: 'Chè khúc bạch', price: 200, menu: 24 },
-  ];
-
-  for (let i = 0; i < menuData.length; i += 12) {
-    const sumFirstMenu =
-      menuData[i].price +
-      menuData[i + 1].price +
-      menuData[i + 2].price +
-      menuData[i + 3].price +
-      menuData[i + 4].price +
-      menuData[i + 5].price;
-
-    const sumSecondMenu =
-      menuData[i + 6].price +
-      menuData[i + 7].price +
-      menuData[i + 8].price +
-      menuData[i + 9].price +
-      menuData[i + 10].price +
-      menuData[i + 11].price;
-    menuContainer.append(`
+      const sumSecondMenu =
+        menuData[i + 6].price +
+        menuData[i + 7].price +
+        menuData[i + 8].price +
+        menuData[i + 9].price +
+        menuData[i + 10].price +
+        menuData[i + 11].price;
+      menuContainer.append(`
         <div class="row ${i === 0 ? 'p-t-108' : ''}">
           <div class="col-md-10 col-lg-6 p-r-35 p-r-15-lg m-l-r-auto">
             <div class="wrap-item-mainmenu p-b-22">
               <h3 class="tit-mainmenu tit10 p-b-25">MENU ${
                 parseInt(i / 6) + 1
               } - (${new Intl.NumberFormat('en-DE').format(
-      sumFirstMenu * 1000
-    )})</h3>
+        sumFirstMenu * 1000
+      )})</h3>
               <div class="menu-note txt23">Quý khách có thể tự do chọn các món trong menu</div>
               <!-- Item mainmenu -->
               <div class="item-mainmenu m-b-24">
@@ -401,7 +388,7 @@
                     menuData[i].price
                   }k<span>
                       <input
-                        data-id="1"
+                        data-id=${i + 1}
                         data-name="${menuData[i].name}"
                         data-price=${menuData[i].price}
                         class="menu_checked checkbox-custom"
@@ -424,7 +411,7 @@
                     menuData[i + 1].price
                   }k<span>
                       <input
-                        data-id="2"
+                        data-id=${i + 2}
                         data-name="${menuData[i + 1].name}"
                         data-price=${menuData[i + 1].price}
                         class="menu_checked checkbox-custom"
@@ -447,7 +434,7 @@
                     menuData[i + 2].price
                   }k<span>
                       <input
-                        data-id="2"
+                        data-id=${i + 3}
                         data-name="${menuData[i + 2].name}"
                         data-price=${menuData[i + 2].price}
                         class="menu_checked checkbox-custom"
@@ -470,7 +457,7 @@
                     menuData[i + 3].price
                   }k<span>
                       <input
-                        data-id="2"
+                        data-id=${i + 4}
                         data-name="${menuData[i + 3].name}"
                         data-price=${menuData[i + 3].price}
                         class="menu_checked checkbox-custom"
@@ -493,7 +480,7 @@
                     menuData[i + 4].price
                   }k<span>
                       <input
-                        data-id="2"
+                        data-id=${i + 5}
                         data-name="${menuData[i + 4].name}"
                         data-price=${menuData[i + 4].price}
                         class="menu_checked checkbox-custom"
@@ -516,7 +503,7 @@
                     menuData[i + 5].price
                   }k<span>
                       <input
-                        data-id="2"
+                        data-id=${i + 6}
                         data-name="${menuData[i + 5].name}"
                         data-price=${menuData[i + 5].price}
                         class="menu_checked checkbox-custom"
@@ -533,8 +520,8 @@
               <h3 class="tit-mainmenu tit10 p-b-25">MENU ${
                 parseInt(i / 6) + 2
               } - (${new Intl.NumberFormat('en-DE').format(
-      sumSecondMenu * 1000
-    )})</h3>
+        sumSecondMenu * 1000
+      )})</h3>
               <div class="menu-note txt23">Quý khách có thể tự do chọn các món trong menu</div>
               <!-- Item mainmenu -->
               <div class="item-mainmenu m-b-24">
@@ -549,7 +536,7 @@
                     menuData[i + 6].price
                   }k<span>
                       <input
-                        data-id="2"
+                        data-id=${i + 7}
                         data-name="${menuData[i + 6].name}"
                         data-price=${menuData[i + 6].price}
                         class="menu_checked checkbox-custom"
@@ -573,7 +560,7 @@
                     menuData[i + 7].price
                   }k<span>
                       <input
-                        data-id="2"
+                        data-id=${i + 8}
                         data-name="${menuData[i + 7].name}"
                         data-price=${menuData[i + 7].price}
                         class="menu_checked checkbox-custom"
@@ -597,7 +584,7 @@
                     menuData[i + 8].price
                   }k<span>
                       <input
-                        data-id="2"
+                        data-id=${i + 9}
                         data-name="${menuData[i + 8].name}"
                         data-price=${menuData[i + 8].price}
                         class="menu_checked checkbox-custom"
@@ -621,7 +608,7 @@
                     menuData[i + 9].price
                   }k<span>
                       <input
-                        data-id="2"
+                        data-id=${i + 10}
                         data-name="${menuData[i + 9].name}"
                         data-price=${menuData[i + 9].price}
                         class="menu_checked checkbox-custom"
@@ -645,7 +632,7 @@
                     menuData[i + 10].price
                   }k<span>
                       <input
-                        data-id="2"
+                        data-id=${i + 11}
                         data-name="${menuData[i + 10].name}"
                         data-price=${menuData[i + 10].price}
                         class="menu_checked checkbox-custom"
@@ -669,7 +656,7 @@
                     menuData[i + 11].price
                   }k<span>
                       <input
-                        data-id="2"
+                        data-id=${i + 12}
                         data-name="${menuData[i + 11].name}"
                         data-price=${menuData[i + 11].price}
                         class="menu_checked checkbox-custom"
@@ -683,5 +670,96 @@
           </div>
         </div>
     `);
+    }
+  });
+
+  var labelGallerys = $('.label-gallery');
+
+  $(labelGallerys).each(function () {
+    $(this).on('click', function () {
+      for (var i = 0; i < labelGallerys.length; i++) {
+        $(labelGallerys[i]).removeClass('is-actived');
+      }
+
+      $(this).addClass('is-actived');
+    });
+  });
+
+  function showCartItem() {}
+
+  var cart = $('.cart');
+  var menuTotal = $('.menu-total');
+  menuTotal.click(function () {
+    showCartItem();
+  });
+
+  function updateTotal(cartItemLength, price, isAdd) {
+    $('#cart-item-count').text(`Số món: ${cartItemLength + (isAdd ? 1 : -1)}`);
+    const prevTotalPrice = parseInt($('#cart-total-price').attr('data-value'));
+    const newTotalprice = isAdd
+      ? parseInt(prevTotalPrice + parseInt(price))
+      : parseInt(prevTotalPrice - parseInt(price));
+
+    $('#cart-total-price').text(
+      new Intl.NumberFormat('en-DE').format(newTotalprice)
+    );
+    $('#cart-total-price').attr('data-value', `${newTotalprice}`);
+
+    $('.cart-item')
+      .toArray()
+      .forEach((item, index) =>
+        $(item)
+          .children('.cart-item-name')
+          .text(
+            `${index + 1}. ${$(item)
+              .children('.cart-item-name')
+              .attr('data-name')}`
+          )
+      );
   }
+
+  function addItemToCart(id, name, price) {
+    const cartItemLength = $('.cart-item').length;
+    updateTotal(cartItemLength, price, true);
+    $('.cart-list').append(`
+          <div class="cart-item" id="cart-item-${id}">
+            <span class="cart-item-name" data-name="${name}">${
+      cartItemLength + 1
+    }. ${name}</span>
+            <span class="cart-item-price">
+              ${price}K<button><i data-id=${id} data-price=${price} class="remove fa fa-remove"></i></button>
+            </span>
+          </div>`);
+  }
+
+  function removeItemToCart(id, name, price) {
+    const cartItemLength = $('.cart-item').length;
+    $('.cart-item')
+      .toArray()
+      .find((item) => {
+        return $(item).attr('id') === `cart-item-${id}`;
+      })
+      .remove();
+
+    updateTotal(cartItemLength, price, false);
+  }
+
+  $('.cart').delegate('.fa-remove', 'click', function () {
+    const cartItemLength = $('.cart-item').length;
+    updateTotal(cartItemLength, $(this).attr('data-price'), false);
+    $(`[data-id=${$(this).attr('data-id')}]`).prop('checked', false);
+    $(this).parentsUntil('.cart-list').remove();
+  });
+
+  $('.menu-container').delegate('.checkbox-custom', 'change', function () {
+    let menuItemId = $(this).attr('data-id');
+    let menuItemName = $(this).attr('data-name');
+    let menuItemPrice = $(this).attr('data-price');
+    if ($(this).is(':checked')) {
+      addItemToCart(menuItemId, menuItemName, menuItemPrice);
+    } else {
+      removeItemToCart(menuItemId, menuItemName, menuItemPrice);
+    }
+    console.log(menuItemId, menuItemName, menuItemPrice);
+  });
 })(jQuery);
