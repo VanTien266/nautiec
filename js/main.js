@@ -175,7 +175,7 @@
     let menuContainer = $('.menu-container');
     const menuData = [
       { name: 'Súp cua hạt sen', price: 200, menu: 1 },
-      { name: 'Nem nướng + chả giò + gỏi củ lai dừa', price: 450, menu: 1 },
+      { name: 'Nem + chả giò + gỏi', price: 450, menu: 1 },
       { name: 'Nai né', price: 300, menu: 1 },
       { name: 'Tai tượng chiên', price: 350, menu: 1 },
       { name: 'Lẩu cá bớp', price: 500, menu: 1 },
@@ -195,14 +195,14 @@
       { name: 'Lẩu cá kèo', price: 500, menu: 3 },
       { name: 'Trái cây', price: 100, menu: 3 },
 
-      { name: 'Gỏi giò bóp thâu', price: 350, menu: 4 },
+      { name: 'Giò bóp thâu', price: 350, menu: 4 },
       { name: 'Ếch chiên nước mắm', price: 300, menu: 4 },
       { name: 'Tôm hấp bia', price: 400, menu: 4 },
       { name: 'Sườn heo nấu đậu', price: 360, menu: 4 },
       { name: 'Lẩu hải sản', price: 400, menu: 4 },
       { name: 'Rau câu dừa', price: 80, menu: 4 },
 
-      { name: 'Gỏi ngó sen + cá trứng chiên', price: 300, menu: 5 },
+      { name: 'Gỏi + cá trứng chiên', price: 300, menu: 5 },
       { name: 'Gà hấp đông cô + xôi', price: 400, menu: 5 },
       { name: 'Nai né', price: 300, menu: 5 },
       { name: 'Tai tượng chiên', price: 350, menu: 5 },
@@ -258,14 +258,14 @@
       { name: 'Lẩu chép giòn', price: 560, menu: 12 },
       { name: 'Chè nhãn lục hạt sen', price: 200, menu: 12 },
 
-      { name: 'Gỏi củ dừa + mực giòn + thát lát', price: 500, menu: 13 },
+      { name: 'Gỏi + mực + thát lát', price: 500, menu: 13 },
       { name: 'Bê hấp rau rừng', price: 460, menu: 13 },
       { name: 'Cá mú hấp Hồng Kông', price: 580, menu: 13 },
       { name: 'Tôm sú hấp bia 20 con', price: 600, menu: 13 },
       { name: 'Lẩu cua đồng bắp bò', price: 500, menu: 13 },
       { name: 'Bánh flan', price: 110, menu: 13 },
 
-      { name: 'Thát lát + cá trứng + nem nướng', price: 500, menu: 14 },
+      { name: 'Thát lát+cá trứng+nem', price: 500, menu: 14 },
       { name: 'Bắp bò hoa hấp cải chua', price: 420, menu: 14 },
       { name: 'Tôm càng nướng', price: 750, menu: 14 },
       { name: 'Gà bó xôi', price: 500, menu: 14 },
@@ -287,7 +287,7 @@
       { name: 'Nho Mỹ', price: 180, menu: 16 },
 
       {
-        name: 'Gỏi sen + nem nướng + tôm chiên + mực chiên',
+        name: 'Gỏi+ nem + tôm + mực',
         price: 600,
         menu: 17,
       },
@@ -305,7 +305,7 @@
       { name: 'Chè khúc bạch', price: 200, menu: 18 },
 
       {
-        name: 'Tôm + mực chiên giòn + cua lột xác muối + chả giò Mayoe',
+        name: 'Tômmực+cualột+chảgiò',
         price: 800,
         menu: 19,
       },
@@ -317,7 +317,7 @@
 
       { name: 'Súp bào ngư', price: 500, menu: 20 },
       { name: 'Cá mú đủ chưng tương', price: 720, menu: 20 },
-      { name: 'Bồ câu hấp trái dừa (10 con)', price: 1200, menu: 20 },
+      { name: 'Bồ câu hấp trái dừa', price: 1200, menu: 20 },
       { name: 'Dê ủ muối', price: 500, menu: 20 },
       { name: 'Ba ba om chuối', price: 680, menu: 20 },
       { name: 'Dưa lưới Nhật', price: 210, menu: 20 },
@@ -337,7 +337,7 @@
       { name: 'Rau câu trái dừa', price: 170, menu: 22 },
 
       { name: 'Súp sò điệp Nhật', price: 980, menu: 23 },
-      { name: 'Cua hấp nước dừa (10 con)', price: 1800, menu: 23 },
+      { name: 'Cua hấp nước dừa', price: 1800, menu: 23 },
       { name: 'Gà hấp tỏi đen', price: 750, menu: 23 },
       { name: 'Cá mú hấp Hồng Kông', price: 680, menu: 23 },
       { name: 'Lẩu kim chi bắp bò', price: 600, menu: 23 },
@@ -347,7 +347,7 @@
       { name: 'Cá chình nướng', price: 850, menu: 24 },
       { name: 'Tôm càng hấp', price: 750, menu: 24 },
       { name: 'Heo sữa quay 1/2 con', price: 950, menu: 24 },
-      { name: 'Lẩu cua nấu bầu (10 con)', price: 1900, menu: 24 },
+      { name: 'Lẩu cua nấu bầu', price: 1900, menu: 24 },
       { name: 'Chè khúc bạch', price: 200, menu: 24 },
     ];
 
@@ -371,7 +371,7 @@
         <div class="row ${i === 0 ? 'p-t-108' : ''}">
           <div class="col-md-10 col-lg-6 p-r-35 p-r-15-lg m-l-r-auto">
             <div class="wrap-item-mainmenu p-b-22">
-              <h3 class="tit-mainmenu tit10 p-b-25">MENU ${
+              <h3 class="tit-mainmenu tit10 p-b-25 color-white">MENU ${
                 parseInt(i / 6) + 1
               } - (${new Intl.NumberFormat('en-DE').format(
         sumFirstMenu * 1000
@@ -380,11 +380,11 @@
               <!-- Item mainmenu -->
               <div class="item-mainmenu m-b-24">
                 <div class="flex-w flex-b m-b-3">
-                  <a href="#" class="name-item-mainmenu txt21 disabled-link">
+                  <a href="#" class="name-item-mainmenu txt21 disabled-link color-white">
                     ${menuData[i].name}
                   </a>
-                  <div class="line-item-mainmenu bg3-pattern"></div>
-                  <div class="price-item-mainmenu txt22">${
+                  <div class="line-item-mainmenu bg3-pattern color-white"></div>
+                  <div class="price-item-mainmenu txt22 color-white">${
                     menuData[i].price
                   }k<span>
                       <input
@@ -401,13 +401,13 @@
               <!-- Item mainmenu -->
               <div class="item-mainmenu m-b-24">
                 <div class="flex-w flex-b m-b-3">
-                  <a href="#" class="name-item-mainmenu txt21 disabled-link">
+                  <a href="#" class="name-item-mainmenu txt21 disabled-link color-white">
                     ${menuData[i + 1].name}
                   </a>
 
-                  <div class="line-item-mainmenu bg3-pattern"></div>
+                  <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22">${
+                  <div class="price-item-mainmenu txt22 color-white">${
                     menuData[i + 1].price
                   }k<span>
                       <input
@@ -424,13 +424,13 @@
               <!-- Item mainmenu -->
               <div class="item-mainmenu m-b-24">
                 <div class="flex-w flex-b m-b-3">
-                  <a href="#" class="name-item-mainmenu txt21 disabled-link">
+                  <a href="#" class="name-item-mainmenu txt21 disabled-link color-white">
                     ${menuData[i + 2].name}
                   </a>
 
-                  <div class="line-item-mainmenu bg3-pattern"></div>
+                  <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22">${
+                  <div class="price-item-mainmenu txt22 color-white">${
                     menuData[i + 2].price
                   }k<span>
                       <input
@@ -447,13 +447,13 @@
               <!-- Item mainmenu -->
               <div class="item-mainmenu m-b-24">
                 <div class="flex-w flex-b m-b-3">
-                  <a href="#" class="name-item-mainmenu txt21 disabled-link">
+                  <a href="#" class="name-item-mainmenu txt21 disabled-link color-white">
                     ${menuData[i + 3].name}
                   </a>
 
-                  <div class="line-item-mainmenu bg3-pattern"></div>
+                  <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22">${
+                  <div class="price-item-mainmenu txt22 color-white">${
                     menuData[i + 3].price
                   }k<span>
                       <input
@@ -470,13 +470,13 @@
               <!-- Item mainmenu -->
               <div class="item-mainmenu m-b-24">
                 <div class="flex-w flex-b m-b-3">
-                  <a href="#" class="name-item-mainmenu txt21 disabled-link">
+                  <a href="#" class="name-item-mainmenu txt21 disabled-link color-white">
                     ${menuData[i + 4].name}
                   </a>
 
-                  <div class="line-item-mainmenu bg3-pattern"></div>
+                  <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22">${
+                  <div class="price-item-mainmenu txt22 color-white">${
                     menuData[i + 4].price
                   }k<span>
                       <input
@@ -493,13 +493,13 @@
               <!-- Item mainmenu -->
               <div class="item-mainmenu m-b-24">
                 <div class="flex-w flex-b m-b-3">
-                  <a href="#" class="name-item-mainmenu txt21 disabled-link">
+                  <a href="#" class="name-item-mainmenu txt21 disabled-link color-white">
                     ${menuData[i + 5].name}
                   </a>
 
-                  <div class="line-item-mainmenu bg3-pattern"></div>
+                  <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22">${
+                  <div class="price-item-mainmenu txt22 color-white">${
                     menuData[i + 5].price
                   }k<span>
                       <input
@@ -517,7 +517,7 @@
           </div>
           <div class="col-md-10 col-lg-6 p-r-35 p-r-15-lg m-l-r-auto">
             <div class="wrap-item-mainmenu p-b-22">
-              <h3 class="tit-mainmenu tit10 p-b-25">MENU ${
+              <h3 class="tit-mainmenu tit10 p-b-25 color-white">MENU ${
                 parseInt(i / 6) + 2
               } - (${new Intl.NumberFormat('en-DE').format(
         sumSecondMenu * 1000
@@ -526,13 +526,13 @@
               <!-- Item mainmenu -->
               <div class="item-mainmenu m-b-24">
                 <div class="flex-w flex-b m-b-3">
-                  <a href="#" class="name-item-mainmenu txt21 disabled-link">
+                  <a href="#" class="name-item-mainmenu txt21 disabled-link color-white">
                     ${menuData[i + 6].name}
                   </a>
 
-                  <div class="line-item-mainmenu bg3-pattern"></div>
+                  <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22">${
+                  <div class="price-item-mainmenu txt22 color-white">${
                     menuData[i + 6].price
                   }k<span>
                       <input
@@ -550,13 +550,13 @@
               <!-- Item mainmenu -->
               <div class="item-mainmenu m-b-24">
                 <div class="flex-w flex-b m-b-3">
-                  <a href="#" class="name-item-mainmenu txt21 disabled-link">
+                  <a href="#" class="name-item-mainmenu txt21 disabled-link color-white">
                     ${menuData[i + 7].name}
                   </a>
 
-                  <div class="line-item-mainmenu bg3-pattern"></div>
+                  <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22">${
+                  <div class="price-item-mainmenu txt22 color-white">${
                     menuData[i + 7].price
                   }k<span>
                       <input
@@ -574,13 +574,13 @@
               <!-- Item mainmenu -->
               <div class="item-mainmenu m-b-24">
                 <div class="flex-w flex-b m-b-3">
-                  <a href="#" class="name-item-mainmenu txt21 disabled-link">
+                  <a href="#" class="name-item-mainmenu txt21 disabled-link color-white">
                     ${menuData[i + 8].name}
                   </a>
 
-                  <div class="line-item-mainmenu bg3-pattern"></div>
+                  <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22">${
+                  <div class="price-item-mainmenu txt22 color-white">${
                     menuData[i + 8].price
                   }k<span>
                       <input
@@ -598,13 +598,13 @@
               <!-- Item mainmenu -->
               <div class="item-mainmenu m-b-24">
                 <div class="flex-w flex-b m-b-3">
-                  <a href="#" class="name-item-mainmenu txt21 disabled-link">
+                  <a href="#" class="name-item-mainmenu txt21 disabled-link color-white">
                     ${menuData[i + 9].name}
                   </a>
 
-                  <div class="line-item-mainmenu bg3-pattern"></div>
+                  <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22">${
+                  <div class="price-item-mainmenu txt22 color-white">${
                     menuData[i + 9].price
                   }k<span>
                       <input
@@ -622,13 +622,13 @@
               <!-- Item mainmenu -->
               <div class="item-mainmenu m-b-24">
                 <div class="flex-w flex-b m-b-3">
-                  <a href="#" class="name-item-mainmenu txt21 disabled-link">
+                  <a href="#" class="name-item-mainmenu txt21 disabled-link color-white">
                     ${menuData[i + 10].name}
                   </a>
 
-                  <div class="line-item-mainmenu bg3-pattern"></div>
+                  <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22">${
+                  <div class="price-item-mainmenu txt22 color-white">${
                     menuData[i + 10].price
                   }k<span>
                       <input
@@ -646,13 +646,13 @@
               <!-- Item mainmenu -->
               <div class="item-mainmenu m-b-24">
                 <div class="flex-w flex-b m-b-3">
-                  <a href="#" class="name-item-mainmenu txt21 disabled-link">
+                  <a href="#" class="name-item-mainmenu txt21 disabled-link color-white">
                     ${menuData[i + 11].name}
                   </a>
 
-                  <div class="line-item-mainmenu bg3-pattern"></div>
+                  <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22">${
+                  <div class="price-item-mainmenu txt22 color-white">${
                     menuData[i + 11].price
                   }k<span>
                       <input
