@@ -172,6 +172,7 @@
       });
     });
 
+    // For menu page
     let menuContainer = $('.menu-container');
     const menuData = [
       { name: 'Súp cua hạt sen', price: 200, menu: 1 },
@@ -371,11 +372,10 @@
         <div class="row ${i === 0 ? 'p-t-108' : ''}">
           <div class="col-md-10 col-lg-6 p-r-35 p-r-15-lg m-l-r-auto">
             <div class="wrap-item-mainmenu p-b-22">
-              <h3 class="tit-mainmenu tit10 p-b-25 color-white">MENU ${
-                parseInt(i / 6) + 1
-              } - (${new Intl.NumberFormat('en-DE').format(
-        sumFirstMenu * 1000
-      )})</h3>
+              <h3 class="tit-mainmenu tit10 p-b-25 color-white">MENU ${parseInt(i / 6) + 1
+        } - (${new Intl.NumberFormat('en-DE').format(
+          sumFirstMenu * 1000
+        )})</h3>
               <div class="menu-note txt23">Quý khách có thể tự do chọn các món trong menu</div>
               <!-- Item mainmenu -->
               <div class="item-mainmenu m-b-24">
@@ -384,9 +384,8 @@
                     ${menuData[i].name}
                   </a>
                   <div class="line-item-mainmenu bg3-pattern color-white"></div>
-                  <div class="price-item-mainmenu txt22 color-white">${
-                    menuData[i].price
-                  }k<span>
+                  <div class="price-item-mainmenu txt22 color-white">${menuData[i].price
+        }k<span>
                       <input
                         data-id=${i + 1}
                         data-name="${menuData[i].name}"
@@ -407,9 +406,8 @@
 
                   <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22 color-white">${
-                    menuData[i + 1].price
-                  }k<span>
+                  <div class="price-item-mainmenu txt22 color-white">${menuData[i + 1].price
+        }k<span>
                       <input
                         data-id=${i + 2}
                         data-name="${menuData[i + 1].name}"
@@ -430,9 +428,8 @@
 
                   <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22 color-white">${
-                    menuData[i + 2].price
-                  }k<span>
+                  <div class="price-item-mainmenu txt22 color-white">${menuData[i + 2].price
+        }k<span>
                       <input
                         data-id=${i + 3}
                         data-name="${menuData[i + 2].name}"
@@ -453,9 +450,8 @@
 
                   <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22 color-white">${
-                    menuData[i + 3].price
-                  }k<span>
+                  <div class="price-item-mainmenu txt22 color-white">${menuData[i + 3].price
+        }k<span>
                       <input
                         data-id=${i + 4}
                         data-name="${menuData[i + 3].name}"
@@ -476,9 +472,8 @@
 
                   <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22 color-white">${
-                    menuData[i + 4].price
-                  }k<span>
+                  <div class="price-item-mainmenu txt22 color-white">${menuData[i + 4].price
+        }k<span>
                       <input
                         data-id=${i + 5}
                         data-name="${menuData[i + 4].name}"
@@ -499,9 +494,8 @@
 
                   <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22 color-white">${
-                    menuData[i + 5].price
-                  }k<span>
+                  <div class="price-item-mainmenu txt22 color-white">${menuData[i + 5].price
+        }k<span>
                       <input
                         data-id=${i + 6}
                         data-name="${menuData[i + 5].name}"
@@ -517,11 +511,10 @@
           </div>
           <div class="col-md-10 col-lg-6 p-r-35 p-r-15-lg m-l-r-auto">
             <div class="wrap-item-mainmenu p-b-22">
-              <h3 class="tit-mainmenu tit10 p-b-25 color-white">MENU ${
-                parseInt(i / 6) + 2
-              } - (${new Intl.NumberFormat('en-DE').format(
-        sumSecondMenu * 1000
-      )})</h3>
+              <h3 class="tit-mainmenu tit10 p-b-25 color-white">MENU ${parseInt(i / 6) + 2
+        } - (${new Intl.NumberFormat('en-DE').format(
+          sumSecondMenu * 1000
+        )})</h3>
               <div class="menu-note txt23">Quý khách có thể tự do chọn các món trong menu</div>
               <!-- Item mainmenu -->
               <div class="item-mainmenu m-b-24">
@@ -532,9 +525,8 @@
 
                   <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22 color-white">${
-                    menuData[i + 6].price
-                  }k<span>
+                  <div class="price-item-mainmenu txt22 color-white">${menuData[i + 6].price
+        }k<span>
                       <input
                         data-id=${i + 7}
                         data-name="${menuData[i + 6].name}"
@@ -556,9 +548,8 @@
 
                   <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22 color-white">${
-                    menuData[i + 7].price
-                  }k<span>
+                  <div class="price-item-mainmenu txt22 color-white">${menuData[i + 7].price
+        }k<span>
                       <input
                         data-id=${i + 8}
                         data-name="${menuData[i + 7].name}"
@@ -580,9 +571,8 @@
 
                   <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22 color-white">${
-                    menuData[i + 8].price
-                  }k<span>
+                  <div class="price-item-mainmenu txt22 color-white">${menuData[i + 8].price
+        }k<span>
                       <input
                         data-id=${i + 9}
                         data-name="${menuData[i + 8].name}"
@@ -604,9 +594,8 @@
 
                   <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22 color-white">${
-                    menuData[i + 9].price
-                  }k<span>
+                  <div class="price-item-mainmenu txt22 color-white">${menuData[i + 9].price
+        }k<span>
                       <input
                         data-id=${i + 10}
                         data-name="${menuData[i + 9].name}"
@@ -628,9 +617,8 @@
 
                   <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22 color-white">${
-                    menuData[i + 10].price
-                  }k<span>
+                  <div class="price-item-mainmenu txt22 color-white">${menuData[i + 10].price
+        }k<span>
                       <input
                         data-id=${i + 11}
                         data-name="${menuData[i + 10].name}"
@@ -652,9 +640,8 @@
 
                   <div class="line-item-mainmenu bg3-pattern color-white"></div>
 
-                  <div class="price-item-mainmenu txt22 color-white">${
-                    menuData[i + 11].price
-                  }k<span>
+                  <div class="price-item-mainmenu txt22 color-white">${menuData[i + 11].price
+        }k<span>
                       <input
                         data-id=${i + 12}
                         data-name="${menuData[i + 11].name}"
@@ -671,7 +658,216 @@
         </div>
     `);
     }
+
+
+    // For bufet page
+    let buffetContainer = $('.buffet-container');
+    const buffetData = [
+      { name: 'Gỏi ngó sen tôm thịt', price: 30, menu: 1 },
+      { name: 'Gỏi củ hủ dừa tôm thịt', price: 30, menu: 1 },
+      { name: 'Gỏi tiến vua tôm thịt', price: 30, menu: 1 },
+      { name: 'Gỏi bò bóp thấu', price: 30, menu: 1 },
+      { name: 'Gỏi bê tái chanh', price: 30, menu: 1 },
+      { name: 'Gỏi sứa sứ thanh', price: 30, menu: 1 },
+
+      { name: 'Gỏi gà xé phay', price: 20, menu: 2 },
+      { name: 'Gỏi gà xé phay', price: 40, menu: 2 },
+      { name: 'Mỳ xào hải sản', price: 30, menu: 2 },
+      { name: 'Mỳ ý xào bò', price: 35, menu: 2 },
+      { name: 'Cơm chiên dương châu', price: 30, menu: 2 },
+      { name: 'Cơm chiên hải sản', price: 30, menu: 2 },
+
+      { name: 'Cơm chiên cá mặn gà xé', price: 30, menu: 3 },
+      { name: 'Bò la gu Bánh mì', price: 30, menu: 3 },
+      { name: 'Bò sốt rượu vang bánh mì', price: 30, menu: 3 },
+      { name: 'Mực hấp hành gừng', price: 35, menu: 3 },
+      { name: 'Mực nướng Sa tế', price: 35, menu: 3 },
+      { name: 'Mực ống hấp gừng', price: 35, menu: 3 },
+
+      { name: 'Mực lăn bột chiên', price: 35, menu: 4 },
+      { name: 'Gà hấp nấm', price: 40, menu: 4 },
+      { name: 'Gà nướng muối ớt', price: 40, menu: 4 },
+      { name: 'Gà xông khói', price: 40, menu: 4 },
+      { name: 'Cánh gà rán', price: 30, menu: 4 },
+      { name: 'Cánh gà nướng', price: 30, menu: 4 },
+
+      { name: 'Đùi gà quay chảo', price: 30, menu: 5 },
+      { name: 'Đùi gà nướng', price: 30, menu: 5 },
+      { name: 'Tôm sú nướng muối ớt', price: 40, menu: 5 },
+      { name: 'Tôm sú hấp bia', price: 40, menu: 5 },
+      { name: 'Tôm sú lăn bột chiên xù', price: 40, menu: 5 },
+      { name: 'Tôm xú rang tỏi', price: 40, menu: 5 },
+
+      { name: 'Bánh mì sandwich hải sản', price: 40, menu: 6 },
+      { name: 'Sườn cừu nướng rượu vang', price: 40, menu: 6 },
+      { name: 'Sườn dê nướng chao', price: 40, menu: 6 },
+      { name: 'Sườn heo nướng muối ớt', price: 40, menu: 6 },
+      { name: 'Cánh gà chiên nước mắm', price: 30, menu: 6 },
+      { name: 'Sò dương nướng mỡ hành', price: 50, menu: 6 },
+
+      { name: 'Cua lột chiên trứng muối', price: 40, menu: 7 },
+      { name: 'Bồ câu quay chảo', price: 40, menu: 7 },
+      { name: 'Chim cút chiên bơ', price: 30, menu: 7 },
+      { name: 'Bò nướng ngũ sắc', price: 30, menu: 7 },
+      { name: 'Ba rọi cuốn hành', price: 35, menu: 7 },
+      { name: 'Bò lúc lắc', price: 30, menu: 7 },
+
+      { name: 'Bò mỹ nướng tiêu', price: 40, menu: 8 },
+      { name: 'Bò úc nướng tiêu', price: 40, menu: 8 },
+      { name: 'Cua biển nướng', price: 50, menu: 8 },
+      { name: 'Ghẹ nướng', price: 50, menu: 8 },
+      { name: 'Bạch tuộc nướng', price: 30, menu: 8 },
+      { name: 'Tôm càng nướng mọi', price: 55, menu: 8 },
+
+      { name: 'Salat dầu dấm trứng', price: 25, menu: 9 },
+      { name: 'Salat Nga', price: 25, menu: 9 },
+      { name: 'Khoai tây chiên', price: 25, menu: 9 },
+      { name: 'Khoai môn chiên', price: 30, menu: 9 },
+      { name: 'Chả giờ hải sản', price: 25, menu: 9 },
+      { name: 'Salat thịt nguội', price: 30, menu: 9 },
+
+      { name: 'Ba rọi sông khói cuốn nấm', price: 30, menu: 10 },
+      { name: 'Rau câu thập cẩm', price: 10, menu: 10 },
+      { name: 'Bánh Flan', price: 15, menu: 10 },
+      { name: 'Trái cây thập cẩm', price: 15, menu: 10 },
+      { name: 'Nho Mỹ', price: 15, menu: 10 },
+    ];
+
+    for (let i = 0; i < buffetData.length; i += 2) {
+      buffetContainer.append(`
+        <div class="row ${i === 0 ? 'p-t-108' : ''}">
+          <div class="col-md-10 col-lg-6 p-r-35 p-r-15-lg m-l-r-auto">
+            <div class="wrap-item-mainmenu p-b-22">
+              <!-- Item mainmenu -->
+              <div class="item-mainmenu m-b-24">
+                <div class="flex-w flex-b m-b-3">
+                  <a href="#" class="name-item-mainmenu txt21 disabled-link color-white">
+                    ${i + 1}. ${buffetData[i].name}
+                  </a>
+                  <div class="line-item-mainmenu bg3-pattern color-white"></div>
+                  <div class="price-item-mainmenu txt22 color-white">${buffetData[i].price
+        }k<span>
+                      <input
+                        data-id=${i + 1}
+                        data-name="${buffetData[i].name}"
+                        data-price=${buffetData[i].price}
+                        class="menu_checked checkbox-custom"
+                        type="checkbox"
+                        value=""
+                      /><span class="checkbox-custom-dummy"></span>
+                    </span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 col-lg-6 p-r-35 p-r-15-lg m-l-r-auto">
+            <div class="wrap-item-mainmenu p-b-22">
+              <!-- Item mainmenu -->
+              <div class="item-mainmenu m-b-24">
+                <div class="flex-w flex-b m-b-3">
+                  <a href="#" class="name-item-mainmenu txt21 disabled-link color-white">
+                  ${i + 2}. ${buffetData[i + 1].name}
+                  </a>
+
+                  <div class="line-item-mainmenu bg3-pattern color-white"></div>
+
+                  <div class="price-item-mainmenu txt22 color-white">${buffetData[i + 1].price
+        }k<span>
+                      <input
+                        data-id=${i + 2}
+                        data-name="${buffetData[i + 1].name}"
+                        data-price=${buffetData[i + 1].price}
+                        class="menu_checked checkbox-custom"
+                        type="checkbox"
+                        value=""
+                      /><span class="checkbox-custom-dummy"></span>
+                    </span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    `);
+    }
   });
+
+  // Handle add buffet to cart
+  var buffetCart = $('.buffet-cart');
+  var buffetTotal = $('.buffet-total');
+  menuTotal.click(function () {
+    showCartItem();
+  });
+
+  function updateTotal(cartItemLength, price, isAdd) {
+    $('#cart-item-count').text(`Số món: ${cartItemLength + (isAdd ? 1 : -1)}`);
+    const prevTotalPrice = parseInt($('#cart-total-price').attr('data-value'));
+    const newTotalprice = isAdd
+      ? parseInt(prevTotalPrice + parseInt(price))
+      : parseInt(prevTotalPrice - parseInt(price));
+
+    $('#cart-total-price').text(
+      new Intl.NumberFormat('en-DE').format(newTotalprice)
+    );
+    $('#cart-total-price').attr('data-value', `${newTotalprice}`);
+
+    $('.cart-item')
+      .toArray()
+      .forEach((item, index) =>
+        $(item)
+          .children('.cart-item-name')
+          .text(
+            `${index + 1}. ${$(item)
+              .children('.cart-item-name')
+              .attr('data-name')}`
+          )
+      );
+  }
+
+  function addItemToCart(id, name, price) {
+    const cartItemLength = $('.cart-item').length;
+    updateTotal(cartItemLength, price, true);
+    $('.cart-list').append(`
+          <div class="cart-item" id="cart-item-${id}">
+            <span class="cart-item-name" data-name="${name}">${cartItemLength + 1
+      }. ${name}</span>
+            <span class="cart-item-price">
+              ${price}K<button><i data-id=${id} data-price=${price} class="remove fa fa-remove"></i></button>
+            </span>
+          </div>`);
+  }
+
+  function removeItemToCart(id, name, price) {
+    const cartItemLength = $('.cart-item').length;
+    $('.cart-item')
+      .toArray()
+      .find((item) => {
+        return $(item).attr('id') === `cart-item-${id}`;
+      })
+      .remove();
+
+    updateTotal(cartItemLength, price, false);
+  }
+
+  $('.cart').delegate('.fa-remove', 'click', function () {
+    const cartItemLength = $('.cart-item').length;
+    updateTotal(cartItemLength, $(this).attr('data-price'), false);
+    $(`[data-id=${$(this).attr('data-id')}]`).prop('checked', false);
+    $(this).parentsUntil('.cart-list').remove();
+  });
+
+  $('.menu-container').delegate('.checkbox-custom', 'change', function () {
+    let menuItemId = $(this).attr('data-id');
+    let menuItemName = $(this).attr('data-name');
+    let menuItemPrice = $(this).attr('data-price');
+    if ($(this).is(':checked')) {
+      addItemToCart(menuItemId, menuItemName, menuItemPrice);
+    } else {
+      removeItemToCart(menuItemId, menuItemName, menuItemPrice);
+    }
+    console.log(menuItemId, menuItemName, menuItemPrice);
+  });
+
+
 
   var labelGallerys = $('.label-gallery');
 
@@ -685,7 +881,7 @@
     });
   });
 
-  function showCartItem() {}
+  function showCartItem() { }
 
   var cart = $('.cart');
   var menuTotal = $('.menu-total');
@@ -723,9 +919,8 @@
     updateTotal(cartItemLength, price, true);
     $('.cart-list').append(`
           <div class="cart-item" id="cart-item-${id}">
-            <span class="cart-item-name" data-name="${name}">${
-      cartItemLength + 1
-    }. ${name}</span>
+            <span class="cart-item-name" data-name="${name}">${cartItemLength + 1
+      }. ${name}</span>
             <span class="cart-item-price">
               ${price}K<button><i data-id=${id} data-price=${price} class="remove fa fa-remove"></i></button>
             </span>
